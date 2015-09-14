@@ -4,24 +4,12 @@
 
 * Install [pyenv](https://github.com/yyuu/pyenv) and [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv)
 
-```sh
-pyenv install 3.4.3
-```
-
-* Install virtualenvwrapper
-
-Make sure that this has been added to your environment (e.g. .zshrc):
+Clone the project, setup pyenv, virtualenv and install dependencies:
 
 ```sh
-eval "$(pyenv init - zsh)"
-eval "$(pyenv virtualenv-init -)"
-```
-
-Clone the project, setup virtualenv and install dependencies:
-
-```sh
-git clone git@github.com:renuo/renuo-thumbs-proxy.git
+git clone git@github.com:cyrilkyburz/bhwi_proxy.git
 cd renuo-thumbs-proxy
+pyenv install 3.4.3
 pyenv virtualenv 3.4.3 renuo-thumbs-proxy-3.4.3
 pip install -r requirements.txt
 pyenv rehash
