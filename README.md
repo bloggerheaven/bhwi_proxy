@@ -29,6 +29,6 @@ chmod +x ./local_server.sh # make it executable
 ./local_server.sh
 ```
 
-# Blogger Heaven Widget Instgram
+# Blogger Heaven Widget Instagram
 
 https://github.com/cyrilkyburz/bhwi
