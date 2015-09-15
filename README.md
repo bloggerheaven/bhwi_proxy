@@ -15,8 +15,16 @@ pip install -r requirements.txt
 pyenv rehash
 ```
 
+* Prepare for development
+
+```sh
+cp local_server.example.sh local_server.sh # and adjust config for local_server.sh
+chmod +x ./local_server.sh # make it executable
+```
+
+
 ## Run app
 
 ```
-python bhwi_proxy.py
+./local_server.sh
 ```
