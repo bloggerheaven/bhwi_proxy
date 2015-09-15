@@ -4,13 +4,13 @@
 
 * Install [pyenv](https://github.com/yyuu/pyenv) and [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv)
 
-Clone the project, setup pyenv, virtualenv and install dependencies:
+* Clone the project, setup pyenv, virtualenv and install dependencies:
 
 ```sh
 git clone git@github.com:cyrilkyburz/bhwi_proxy.git
 cd renuo-thumbs-proxy
 pyenv install 3.4.3
-pyenv virtualenv 3.4.3 renuo-thumbs-proxy-3.4.3
+pyenv virtualenv 3.4.3 bhwi_proxy-3.4.3
 pip install -r requirements.txt
 pyenv rehash
 ```
@@ -28,3 +28,7 @@ chmod +x ./local_server.sh # make it executable
 ```
 ./local_server.sh
 ```
+
+# Blogger Heaven Widget Instgram
+
+https://github.com/cyrilkyburz/bhwi
