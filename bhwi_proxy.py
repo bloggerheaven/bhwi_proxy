@@ -16,7 +16,7 @@ def recent_images(user_id):
     if user_id in os.getenv('USER_IDS', ''):
       path = build_url(user_id, os.getenv('CLIENT_ID', ''))
       r = requests.get(path)
-      return jsonify(results=r.json(), status=202)
+      return jsonify(r.json(), status=202)
     else:
       abort(403)
 
