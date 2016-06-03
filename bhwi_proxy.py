@@ -5,8 +5,8 @@ import requests
 app = Flask(__name__)
 app.debug = os.getenv('DEBUG', '') == 'True'
 
-def client_id():
-  return os.getenv('CLIENT_ID', '')
+def access_token():
+  return os.getenv('ACCESS_TOKEN', '')
 
 def check_user_id(user_id):
   if user_id not in os.getenv('USER_IDS', ''):
@@ -19,10 +19,10 @@ def perform_request(path):
   return response
 
 def build_recent_images_url(user_id):
-  return 'https://api.instagram.com/v1/users/' + user_id + '/media/recent/?client_id=' + client_id() + '&callback=?'
+  return 'https://api.instagram.com/v1/users/' + user_id + '/media/recent/?access_token=' + access_token()
 
 def build_user_profile_url(user_id):
-  return 'https://api.instagram.com/v1/users/' + user_id + '?client_id=' + client_id()
+  return 'https://api.instagram.com/v1/users/' + user_id + '?access_token=' + access_token()
 
 @app.route("/recent_images/<path:user_id>")
 def recent_images(user_id):
