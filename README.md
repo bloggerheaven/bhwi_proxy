@@ -7,7 +7,7 @@
 * Clone the project, setup pyenv, virtualenv and install dependencies:
 
 ```sh
-git clone git@github.com:cyrilkyburz/bhwi_proxy.git
+git clone git@github.com:bloggerheaven/bhwi_proxy.git
 cd renuo-thumbs-proxy
 pyenv install 3.4.3
 pyenv virtualenv 3.4.3 bhwi_proxy-3.4.3
