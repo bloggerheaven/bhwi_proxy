@@ -8,7 +8,7 @@
 
 ```sh
 git clone git@github.com:bloggerheaven/bhwi_proxy.git
-cd renuo-thumbs-proxy
+cd bhwi-proxy
 pyenv install 3.4.3
 pyenv virtualenv 3.4.3 bhwi_proxy-3.4.3
 pip install -r requirements.txt
